@@ -18,4 +18,4 @@
 ```C:\ffmpeg\bin\imagerec\runitpath.bat "%1"```
 
 
-![alt text](https://raw.githubusercontent.com/n0x5/CSI-Image-Viewer-with-OCR/main/csi2.jpg)
+![alt text](https://raw.githubusercontent.com/n0x5/CSI-Image-Viewer-with-OCR/main/csi3.jpg)
