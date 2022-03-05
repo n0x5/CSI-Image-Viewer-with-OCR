@@ -12,3 +12,4 @@
    Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CSI Image Rec
    Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CSI Image Rec\command -> C:\ffmpeg\bin\imagerec\runitpath.bat "%1"
 
+![]((https://raw.githubusercontent.com/n0x5/CSI-Image-Viewer-with-OCR/main/csi.jpg)
