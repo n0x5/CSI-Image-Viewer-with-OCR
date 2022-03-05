@@ -11,6 +11,7 @@
 4. add to registry for right click menu:
  
 ```Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CSI Image Rec```
+
 ```Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CSI Image Rec\command -> C:\ffmpeg\bin\imagerec\runitpath.bat "%1"```
 
 
