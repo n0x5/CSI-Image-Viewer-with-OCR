@@ -40,12 +40,23 @@ text2['yscrollcommand'] = scrollbar.set
 scrollbar.place(x=500, y=10, height=500)
 
 def save_single():
-    endpoint1 = os.path.split(image2)
     with open(image2+'.txt', 'w') as img_file:
         img_file.write(img_text)
 
 def save_dir():
-    pass
+    endpoint1 = os.path.split(image2)
+    endpoint = endpoint1[0]
+    for subdir, dirs, files in os.walk(endpoint):
+        for fn in files:
+            file2 = os.path.join(subdir, fn)
+            try:
+                if not os.path.isfile(file2+'.txt'):
+                    image_load3 = PIL.Image.open(file2)
+                    img_text3 = pytesseract.image_to_string(image_load3)
+                    with open(file2+'.txt', 'w') as img_file2:
+                        img_file2.write(img_text3)
+            except Exception:
+                pass
 
 button_single = Button(window, text="Save text to .csi file", command=save_single,  width = '30', height = '4')
 button_all = Button(window, text="Scan all images in directory and save", command=save_dir,  width = '30', height = '4')
