@@ -32,9 +32,12 @@ instruction.place(x=115, y=10)
 img = PIL.ImageTk.PhotoImage(image_load_resize)
 text1 = Label(image = img, width=400)
 text1.pack(side=LEFT)
-text2 = Label(text='{}' .format(img_text), width=300)
+text2 = Text( width=300)
 text2.pack(side=RIGHT)
-
+text2.insert('1.0', img_text)
+scrollbar = Scrollbar(text2, orient='vertical', command=text2.yview)
+text2['yscrollcommand'] = scrollbar.set
+scrollbar.place(x=500, y=10, height=500)
 
 def save_single():
     endpoint1 = os.path.split(image2)
