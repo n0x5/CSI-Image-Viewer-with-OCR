@@ -15,7 +15,6 @@
 ```Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\CSI Image Rec\command```
 
 6. Edit value of 'command' key to:
-7. 
 ```C:\ffmpeg\bin\imagerec\runitpath.bat "%1"```
 
 
